@@ -1,0 +1,10 @@
+Step 1: Get first input from user. This is the first variable. Box # 1.
+Step 2: User will choose which operation (+.-,x,/) from the drop down menu in between the two boxes.
+Step 3: Get second input from user. This is the second variable. Box # 2.
+Step 4: Press the "=" button.
+Step 5: If the variables are invalid, meaning it is not a number, display "Invalid Input. Try again."
+Step 6: If the variables are valid, simulate computation.
+Step 7: If user picked the addition symbol, display sum.
+Step 8: If user picked the subtraction symbol, display difference.
+Step 9: If user picked the multiplication symbol, display product.
+Step 10: If user picked the division symbol, display quotient.
