@@ -8,3 +8,4 @@ Step 7: If user picked the addition symbol, display sum.
 Step 8: If user picked the subtraction symbol, display difference.
 Step 9: If user picked the multiplication symbol, display product.
 Step 10: If user picked the division symbol, display quotient.
+Step 11: If var one and var two are 0 for division, display "Invalid Operation".
