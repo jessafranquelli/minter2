@@ -1,0 +1,16 @@
+Step 1: Begin
+Step 2: Print "Name:"
+Step 3: Read user's name
+Step 4: Print "Hourly Rate Salary:"
+Step 5: Read user's hourly rate salary (var a)
+Step 6: Print "Hours Worked:"
+Step 7: Read user's hours worked in a day (var b)
+Step 8: Print "Deduction Rate:"
+Step 9: Read user's deduction rate (var c)
+Step 10: Compute gross rate (a * b)
+Step 11: Declare gross rate as var d
+Step 12: Compute deduction (d * c)
+Step 13: Declare deduction as var e
+Step 14: Compute net pay (d - e)
+Step 15: Display User's name, Gross Pay, Deduction, and Net Pay
+Step 16: End
