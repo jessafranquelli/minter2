@@ -1,0 +1,12 @@
+Step 1: Start
+Step 2: Print "Numerical Grade:"
+Step 3: Read User's numerical grade (var NumGrade)
+Step 4: If NumGrade is 97, 98, 99, or 100, Print "4.0"
+Step 5: If NumGrade is 93, 94, 95, or 96, Print "3.5"
+Step 6: If NumGrade is 89, 90, 91, or 92, Print "3.0"
+Step 7: If NumGrade is 85, 86, 87, or 88, Print "2.5"
+Step 8: If NumGrade is 80, 81, 82, or 83, Print "2.0"
+Step 9: If NumGrade is 75, 76 77, or 78, Print "1.5"
+Step 10: If NumGrade is 70, 71, 72, 73, or 74, Print "1.0"
+Step 11: Else Print "0"
+Step 12: End
