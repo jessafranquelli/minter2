@@ -1,100 +1,74 @@
-<p id="demo"></p>
+
+<html>
+
+
+<title>My Grades Demo</title>
+<body>
+
+<textarea id="InputGrades"></textarea>
+
+<p id="demo">Grade Will be displayed Here</p>
+
+<button type="button" onclick="myGradeFunction()">Try it</button>
+
+</body>
+
 <script>
-var NumGrade = ("100");
-if (NumGrade === "100") {
-document.getElementById("demo").innerHTML = "4.0";
+
+function CheckGrade(InputGrade){
+
+var TestGrade = parseInt(InputGrade);
+
+if(TestGrade == NaN){
+document.getElementById("demo").innerHTML = "Incorrect Value";
+}else{
+
+var ConvertedGrade = 0;
+
+if(TestGrade <= 100){
+if( 97 <= TestGrade && TestGrade  <= 100)
+{
+var ConvertedGrade = 4.0;
 }
-else if (NumGrade === "99") {
-document.getElementById("demo").innerHTML = "4.0";
+else if(93 <= TestGrade && TestGrade   <= 96)
+{
+var ConvertedGrade= 3.5;
 }
-else if (NumGrade === "98") {
-document.getElementById("demo").innerHTML = "4.0";
+else if(89 <= TestGrade && TestGrade   <= 92)
+{ var ConvertedGrade = 3.0;
 }
-else if (NumGrade === "97") {
-document.getElementById("demo").innerHTML = "4.0";
+else if(85 <= TestGrade && TestGrade   <=  88)
+{
+var ConvertedGrade = 2.5;
 }
-else if (NumGrade === "96") {
-document.getElementById("demo").innerHTML = "3.5";
+else if(80 <= TestGrade && TestGrade   <= 84)
+{
+var ConvertedGrade = 2.0;
 }
-else if (NumGrade === "95") {
-document.getElementById("demo").innerHTML = "3.5";
+else if(75 <= TestGrade && TestGrade   <= 79)
+{
+var ConvertedGrade = 1.5;
 }
-else if (NumGrade === "94") {
-document.getElementById("demo").innerHTML = "3.5";
+else if(70 <= TestGrade && TestGrade   <= 74)
+{
+var ConvertedGrade = 1.0;
 }
-else if (NumGrade === "93") {
-document.getElementById("demo").innerHTML = "3.5";
+else if(TestGrade   < 70)
+{
+var ConvertedGrade = 0;
 }
-else if (NumGrade === "92") {
-document.getElementById("demo").innerHTML = "3.0";
+
+document.getElementById("demo").innerHTML = "Converted Grade is: " + ConvertedGrade;
+}else
+{
+document.getElementById("demo").innerHTML = "Value is out of bound";
 }
-else if (NumGrade === "91") {
-document.getElementById("demo").innerHTML = "3.0";
 }
-else if (NumGrade === "90") {
-document.getElementById("demo").innerHTML = "3.0";
 }
-else if (NumGrade === "89") {
-document.getElementById("demo").innerHTML = "3.0";
-}
-else if (NumGrade === "88") {
-document.getElementById("demo").innerHTML = "2.5";
-}
-else if (NumGrade === "87") {
-document.getElementById("demo").innerHTML = "2.5";
-}
-else if (NumGrade === "86") {
-document.getElementById("demo").innerHTML = "2.5";
-}
-else if (NumGrade === "85") {
-document.getElementById("demo").innerHTML = "2.5";
-}
-else if (NumGrade === "84") {
-document.getElementById("demo").innerHTML = "2.0";
-}
-else if (NumGrade === "83") {
-document.getElementById("demo").innerHTML = "2.0";
-}
-else if (NumGrade === "82") {
-document.getElementById("demo").innerHTML = "2.0";
-}
-else if (NumGrade === "81") {
-document.getElementById("demo").innerHTML = "2.0";
-}
-else if (NumGrade === "80") {
-document.getElementById("demo").innerHTML = "2.0";
-}
-else if (NumGrade === "79") {
-document.getElementById("demo").innerHTML = "1.5";
-}
-else if (NumGrade === "78") {
-document.getElementById("demo").innerHTML = "1.5";
-}
-else if (NumGrade === "77") {
-document.getElementById("demo").innerHTML = "1.5";
-}
-else if (NumGrade === "76") {
-document.getElementById("demo").innerHTML = "1.5";
-}
-else if (NumGrade === "75") {
-document.getElementById("demo").innerHTML = "1.5";
-}
-else if (NumGrade === "74") {
-document.getElementById("demo").innerHTML = "1.0";
-}
-else if (NumGrade === "73") {
-document.getElementById("demo").innerHTML = "1.0";
-}
-else if (NumGrade === "72") {
-document.getElementById("demo").innerHTML = "1.0";
-}
-else if (NumGrade === "71") {
-document.getElementById("demo").innerHTML = "1.0";
-}
-else if (NumGrade === "70") {
-document.getElementById("demo").innerHTML = "1.0";
-}
-else if (NumGrade === "69") {
-document.getElementById("demo").innerHTML = "0";
+
+function myGradeFunction() {
+var InputGrade =  document.getElementById("InputGrades").value;
+CheckGrade(InputGrade);
 }
 </script>
+</html>
